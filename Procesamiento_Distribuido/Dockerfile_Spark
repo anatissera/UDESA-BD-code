@@ -1,0 +1,4 @@
+FROM spark:python3
+LABEL author="BD-UDESA-processing"
+LABEL description="Imagen de Spark con pyspark"
+LABEL version="1.0"
