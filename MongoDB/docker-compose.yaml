@@ -1,6 +1,6 @@
 services:
   mongo:
-    image: mongo:7.0.12
+    image: mongo:8.0.15
     environment:
       MONGO_INITDB_ROOT_USERNAME: bd_udesa
       MONGO_INITDB_ROOT_PASSWORD: bd_udesa
