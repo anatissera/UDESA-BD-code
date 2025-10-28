@@ -1,5 +1,7 @@
 FROM spark:python3
 
+USER root
+
 RUN apt -y install python3 pip
 RUN pip install pandas pyarrow
 
