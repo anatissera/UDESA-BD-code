@@ -4,7 +4,7 @@ from pyspark import SparkContext, SparkConf
 sc = SparkContext('local', 'test')
 
 # Nos conectamos al cluster HDFS, obteniendo un RDD
-rdd_archivo = sc.textFile("hdfs://namenode:8020/recorridos_realizados_2024_corregido.csv")
+rdd_archivo = sc.textFile("/tmp/recorridos_realizados_2024_corregido.csv")
 
 # Calcular para cada estación y cada día la cantidad de extracciones y de devoluciones de bicicletas que se hicieron en esa estación en ese día. El resultado del pipeline deberán ser tuplas de la forma (id_estacion, nombre_estacion, fecha, cantidad_extracciones, cantidad_devoluciones)
 
