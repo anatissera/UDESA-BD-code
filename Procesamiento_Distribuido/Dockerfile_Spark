@@ -1,4 +1,8 @@
 FROM spark:python3
+
+RUN apt -y install python3 pip
+RUN pip install pandas pyarrow
+
 LABEL author="BD-UDESA-processing"
 LABEL description="Imagen de Spark con pyspark"
 LABEL version="1.0"
