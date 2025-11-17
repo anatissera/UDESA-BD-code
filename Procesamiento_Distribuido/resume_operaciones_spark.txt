@@ -1,0 +1,22 @@
+# map (transforma cada valor en un nuevo valor):
+# rdd_res = rdd.map(lambda x: ...escribir f(x) que devuelva x transformado...)
+# 
+# filter (filtra algunos valores):
+# rdd_res = rdd.filter(lambda x: ...escribir f(x) que devuelva True o False...)
+# 
+# reduce (reduce todos los valores a un único valor):
+# rdd_res = rdd.reduce(lambda x1, x2: ...escribir f(x1, x2) que devuelva un x3...)
+# 
+# flatMap (transforma cada valor en 0..N valores):
+# rdd_res = rdd.flatMap(lambda x: ...escribir f(x) que devuelva [x1, x2, ..., xn]...)
+# 
+# groupBy (transforma valores x1, x2 agrupándolos por el valor de f(xi) y devolviendo una lista (f(xi), [xa, xb, ...] por cada grupo
+# rdd_res = rdd.groupBy(lambda x: .. escribir f(x) que devuelva el grupo al que pertenece x...)
+#
+# groupByKey (transforma pares (k, v) agrupando todos los pares con el mismo k en un único (k, [v1, v2, ..., vn]):
+# rdd_res = rdd.groupByKey()
+
+# reduceByKey (transforma pares (k, v) agrupando todos los pares con el mismo k en un único (k, [v1, v2, ..., vn]) y aplicando la función lambda para resumir los valores en 1:
+# rdd_res = rdd.reduceByKey(lambda v1, v2: ...escribir f(v1, v2) que devuelva un único v...)
+
+# collect (muestra los resultados)
