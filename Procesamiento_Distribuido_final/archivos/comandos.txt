@@ -1,0 +1,11 @@
+docker stop ID
+Ctrl + Shift + esc -> ver apps
+
+cd C:\Users\anapt\Repositorios\UDESA-BD-code\Procesamiento_Distribuido_final
+docker compose up -d
+docker ps 
+
+y el name es el que pongo acá:
+docker exec -it procesamiento_distribuido_final-spark-1 bash
+
+http://localhost:4040

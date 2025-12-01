@@ -1,0 +1,12 @@
+services:
+  spark:
+    build:
+      context: .
+      dockerfile: Dockerfile_Spark
+      platforms:
+        - linux/amd64
+    ports:
+      - 4040:4040 # Interfaz web de Spark (disponible si existe un SparkContext)
+    command: [ "tail", "-f", "/dev/null" ]
+    volumes:
+      - ./archivos:/tmp

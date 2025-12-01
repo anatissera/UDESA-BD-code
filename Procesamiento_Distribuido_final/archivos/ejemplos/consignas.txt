@@ -1,0 +1,22 @@
+1. Cantidad de reseñas por libro
+2. Promedio de puntaje por libro
+3. Cantidad de reviews por mes
+4. Top 10 usuarios con más reseñas
+5. ¿Qué libro tiene el review más largo?
+6. Distribución de helpfulness
+7. Palabras más frecuentes en títulos
+8. ¿Qué libro tiene más palabras en total en las reviews? -> len(review_text.split())
+9. Máximo score por usuario
+10. Cantidad de reviews por rango horario
+11. Porcentaje de reviews positivas vs negativas
+12. Cantidad de reviews por nombre del usuario
+
+EJERCICIOS DATAFRAME / SQL 
+13. Top 5 libros más populares (con más reviews)
+14. Promedio de score por mes
+15. Review más larga por libro
+16. Libros más polémicos
+17. Usuarios con mayor porcentaje de helpfulness
+18. Reviews que contienen la palabra “Seuss”
+19. Score promedio por década del libro
+20. Cantidad de reviews cuyo summary tiene signo '!'
