@@ -1,7 +1,7 @@
 from pyspark import SparkContext, SparkConf
 
 # Creamos un contexto de Spark
-sc = SparkContext('local', 'test')
+sc = SparkContext('local[*]', 'test')
 
 # Nos conectamos al cluster HDFS, obteniendo un RDD
 rdd_archivo = sc.textFile("/tmp/recorridos_realizados_2024_corregido.csv")

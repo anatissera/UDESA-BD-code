@@ -1,0 +1,3 @@
+$ mongorestore -u bd_udesa -p bd_udesa --authenticationDatabase admin -d nyt --drop articles.bson
+
+$ mongosh -u bd_udesa -p bd_udesa --authenticationDatabase admin
