@@ -1,3 +1,6 @@
+solo map, flatMap, mapValues, groupbyKey y reduceByKey
+puede servir tambien la filter que sirve para solo devolver elementos que cumplan una condicion (la funcion que recibe debe devolver verdadero o falso)
+
 # map (transforma cada valor en un nuevo valor):
 # rdd_res = rdd.map(lambda x: ...escribir f(x) que devuelva x transformado...)
 # 

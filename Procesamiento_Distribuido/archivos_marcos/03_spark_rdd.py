@@ -29,4 +29,5 @@ rdd_map1 = rdd_archivo.flatMap(map1)
 rdd_reduce1 = rdd_map1.reduceByKey(lambda x, y: (x[0]+y[0], x[1]+y[1]))
 # a reduce by key le paso 2 valores y los junta
 
+
 rdd_reduce1.collect()

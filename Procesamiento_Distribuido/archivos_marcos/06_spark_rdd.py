@@ -26,25 +26,17 @@ rdd_map1 = rdd_archivo.flatMap(map1)
 rdd_reduce1 = rdd_map1.reduceByKey(lambda v1, v2: v1+v2) # (key (id, fecha), value: cant))
 # quiero key (id) value (fecha, cant)
 
-print("\n reduced 1")
-for x in rdd_reduce1.take(10):
-    print(x)
-
 # como la key es distinta a lo que necesitamos hago un map
-
 
 def map2(x: tuple):
     (id_orig, nom_orig, fecha_orig), cant = x
-    return [(id_orig, nom_orig), (fecha_orig, cant)]
+    return ((id_orig, nom_orig), (fecha_orig, cant))
     
 rdd_map2 = rdd_reduce1.flatMap(map2)
 
-print("\n reduced and map 2")
-for x in rdd_map2.take(10):
-    print(x)
 # ahora ya tengo la forma y me falta el max
 
-# rdd = rdd_map2.reduceByKey(lambda v1, v2 : v1 if v1[1] > v2[1] else v2)
+rdd = rdd_map2.reduceByKey(lambda v1, v2 : v1 if v1[1] > v2[1] else v2)
 
 
-# rdd_reduce1.collect()
+rdd_reduce1.collect()
